@@ -1,0 +1,55 @@
+/*
+Give each article element a title of "Article parent element", a dashed gray border, and a 
+background color of royalblue. 
+Also ensure that it spans the entire length of the document. */
+li {
+    display: inline;
+}
+span.inline {
+    display: block;
+    border: solid 1px black;
+    margin: 25px 25px;
+}
+.n-child section:nth-of-type(even) {
+    border: solid 1px black;
+}
+ul li::after {
+    content: ",";
+}
+ul li:last-child::after {
+    content: "";
+}
+.n-child section:nth-of-type(odd) {
+    color: blue;
+}
+.first-of-type aside:first-of-type {
+    background-color: lime;
+}
+.first-of-type section:first-of-type {
+    background-color: purple;
+}
+.three section {
+    background-color: orange;
+}
+.three :first-child {
+    background-color: goldenrod;
+}
+.three :last-child {
+    background-color: darkslategray;
+}
+article::before {
+    content: "Article Parent Element";
+    border: dashed 1px grey;
+    display: block;
+    background-color: royalblue;
+}
+ul li:hover {
+    background-color: lightgrey;
+    color: dimgray;
+}
+ul li:active {
+    padding: 0 5px;
+}
+
+
+
