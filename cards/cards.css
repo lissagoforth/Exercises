@@ -1,0 +1,6 @@
+.newCard {
+    border: solid 1px black;
+    padding: 25px;
+    background-color: lightcyan;
+    margin: 10px;
+}
