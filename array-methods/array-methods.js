@@ -20,9 +20,8 @@ planets.forEach(function(planet) {
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
 let capitalize = planets.map(function(planet) {
-    return planet.charAt(0).toUpperCase
+    return planet.charAt(0).toUpperCase() + planet.slice(1)
 })
-
 
 /*
     Use the filter method to create a new array that
@@ -31,7 +30,15 @@ let capitalize = planets.map(function(planet) {
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
-
+const planetsWithE = planets.filter(function (planet) {
+    const hasE = (planet.includes('e'))
+    return hasE
+})
 
 // Use the reduce method to create a sentence from the words in the following array
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
+const sentence = words.reduce(
+    function(currentWord, next) {
+        return currentWord + " " + next
+    }
+)
