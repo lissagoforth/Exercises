@@ -1,0 +1,23 @@
+.card {
+    width: 300px;
+    background-color: ivory;
+    border: solid 1px khaki;
+    padding: 5px;
+}
+.card__makeAndModel {
+    color: slategray;
+    font-size: 18px;
+}
+.card__price {
+    color: yellowgreen;
+    font-size: 16px;
+}
+.card__specs {
+    font-size: 12px;
+}
+.card__mileage {
+    color: crimson;
+}
+.card__engine {
+    color: darkolivegreen;
+}
